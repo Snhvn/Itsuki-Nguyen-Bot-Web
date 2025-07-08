@@ -111,9 +111,9 @@
             const codeElement = document.getElementById("key-display");
             const copyButton = document.querySelector(".js-copy-btn");
             navigator.clipboard.writeText(codeElement.textContent).then(() => {
-                copyButton.textContent = "Copied!";
+                copyButton.textContent = "Đã sao chép!";
                 setTimeout(() => {
-                    copyButton.textContent = "Copy Code";
+                    copyButton.textContent = "Sao Chép Code";
                 }, 2000); // Reset button text after 2 seconds
             }).catch(err => {
                 console.error("Failed to copy: ", err);
