@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itsuki Nguyễn</title>
+    <meta content="SNIPA VN" property="og:title"/>
+    <meta content="Xây dựng và phát triển bởi SNIPA VN !" property="og:description"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="profile-card js-profile-card">
+            <div class="profile-card__img">
+                <img src="https://github.com/ItsukiNguyen/Website/raw/refs/heads/main/cc73d58ef095d57c8bf15934c1dbcdad.jpg" alt="profile card"/>
+            </div>
+            <div class="profile-card__cnt js-profile-cnt">
+                <div class="profile-card__name">SNIPA VN <i class="fa fa-check-circle" style="color:rgb(17, 143, 249)" title="Verified Author"></i></div>
+                <div class="profile-card__txt">Mình là <b>Itsuki Nguyễn</b>, đây. Mục đích của mình là cho các free Ugphone Cloud Gửi đến các bạn 🥰🥰🔥🔥:33</div>
+                <div class="profile-card-loc">
+                    <span class="profile-card-loc__icon">
+                        <svg class="icon"><use xlink:href="#icon-location"></use></svg>
+                    </span>
+                    <span class="profile-card-loc__txt">UGPHONE - CLOUD </span>
+                </div>
+                <div class="key-display-container">
+                    <div id="key-display" class="key-display"></div> <!-- Example code content -->
+                    <button class="profile-card__button button--blue js-copy-btn" onclick="copyCode()">Copy Code</button>
+                </div>
+                <div class="profile-card-inf">
+                    <div class="profile-card-inf__item">
+                        <div class="profile-card-inf__title" id="count-followers">0</div>
+                        <div class="profile-card-inf__txt">Followers</div>
+                    </div>
+                    <div class="profile-card-inf__item">
+                        <div class="profile-card-inf__title" id="count-following">0</div>
+                        <div class="profile-card-inf__txt">Following</div>
+                    </div>
+                    <div class="profile-card-inf__item">
+                        <div class="profile-card-inf__title" id="count-posts">0</div>
+                        <div class="profile-card-inf__txt">Posts</div>
+                    </div>
+                    <div class="profile-card-inf__item">
+                        <div class="profile-card-inf__title" id="count-works">0</div>
+                        <div class="profile-card-inf__txt">Works</div>
+                    </div>
+                </div>
+                <div class="profile-card-social">
+                    <a class="profile-card-social__item discord" href="https://dsc.gg/servertipacvn" target="_blank">
+                        <span class="icon-font">
+                            <svg class="icon"><use xlink:href="#icon-discord"></use></svg>
+                        </span>
+                    </a>
+                    <a class="profile-card-social__item youtube" href="https://www.youtube.com/@snipavn205" target="_blank">
+                        <span class="icon-font">
+                            <svg class="icon"><use xlink:href="#icon-youtube"></use></svg>
+                        </span>
+                    </a>
+                    <a class="profile-card-social__item link" href="https://itsukinguyen.github.io/Website/" target="_blank">
+                        <span class="icon-font">
+                            <svg class="icon"><use xlink:href="#icon-link"></use></svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="profile-card-ctr">
+                    <button class="profile-card__button button--blue js-message-btn">Message</button>
+                    <button class="profile-card__button button--orange" onclick="window.open('https://www.youtube.com/@snipavn205')">Subscribe</button>
+                </div>
+            </div>
+            <div class="profile-card-message js-message">
+                <form class="profile-card-form">
+                    <div class="profile-card-form__container">
+                        <textarea placeholder="Cảm ơn bạn đã quan tâm. Hiện tại, tính năng này chưa khả dụng, vui lòng thử lại sau. Chúc bạn một ngày tốt lành !"></textarea>
+                    </div>
+                    <div class="profile-card-form__bottom">
+                        <button class="profile-card__button button--blue js-message-close">Send</button>
+                        <button class="profile-card__button button--gray js-message-close">Cancel</button>
+                    </div>
+                </form>
+                <div class="profile-card__overlay js-message-close"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SVG Icons -->
+    <svg hidden="hidden">
+        <defs>
+            <symbol id="icon-location" viewBox="0 0 32 32">
+                <title>location</title>
+                <path d="M16 31.68c-0.352 0-0.672-0.064-1.024-0.16-0.8-0.256-1.44-0.832-1.824-1.6l-6.784-13.632c-1.664-3.36-1.568-7.328 0.32-10.592 1.856-3.2 4.992-5.152 8.608-5.376h1.376c3.648 0.224 6.752 2.176 8.608 5.376 1.888 3.264 2.016 7.232 0.352 10.592l-6.816 13.664c-0.288 0.608-0.8 1.12-1.408 1.408-0.448 0.224-0.928 0.32-1.408 0.32zM15.392 2.368c-2.88 0.192-5.408 1.76-6.912 4.352-1.536 2.688-1.632 5.92-0.288 8.672l6.816 13.632c0.128 0.256 0.352 0.448 0.64 0.544s0.576 0.064 0.832-0.064c0.224-0.096 0.384-0.288 0.48-0.48l6.816-13.664c1.376-2.752 1.248-5.984-0.288-8.672-1.472-2.56-4-4.128-6.88-4.32h-1.216zM16 17.888c-3.264 0-5.92-2.656-5.92-5.92 0-3.232 2.656-5.888 5.92-5.888s5.92 2.656 5.92 5.92c0 3.264-2.656 5.888-5.92 5.888zM16 8.128c-2.144 0-3.872 1.728-3.872 3.872s1.728 3.872 3.872 3.872 3.872-1.728 3.872-3.872c0-2.144-1.76-3.872-3.872-3.872z"></path>
+            </symbol>
+            <symbol id="icon-discord" viewBox="0 0 32 32">
+                <title>discord</title>
+                <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+            </symbol>
+            <symbol id="icon-youtube" viewBox="0 0 32 32">
+                <title>youtube</title>
+                <path d="M31.681 9.6s-.313-2.206-1.275-3.175c-1.219-1.275-2.581-1.281-3.206-1.356-4.475-.406-11.2-.406-11.2-.406s-6.725 0-11.2.406c-.625.075-1.987.081-3.206 1.356-.962.969-1.275 3.175-1.275 3.175s-.313 2.587-.313 5.175v2.425c0 2.587.313 5.175.313 5.175s.313 2.206 1.275 3.175c1.219 1.275 2.819 1.231 3.531 1.369 2.562.231 10.881.3 10.881.3s6.731-.012 11.206-.419c.625-.075 1.987-.081 3.206-1.356.962-.969 1.275-3.175 1.275-3.175s.313-2.587.313-5.175v-2.425c0-2.587-.319-5.175-.319-5.175zm-19.681 13.175v-11.2l8.8 5.594-8.8 5.606z"></path>
+            </symbol>
+            <symbol id="icon-link" viewBox="0 0 32 32">
+                <title>link</title>
+                <path d="M17.984 11.456c-0.704 0.704-0.704 1.856 0 2.56 2.112 2.112 2.112 5.568 0 7.68l-5.12 5.12c-2.048 2.048-5.632 2.048-7.68 0-1.024-1.024-1.6-2.4-1.6-3.84s0.576-2.816 1.6-3.84c0.704-0.704 0.704-1.856 0-2.56s-1.856-0.704-2.56 0c-1.696 1.696-2.624 3.968-2.624 6.368 0 2.432 0.928 4.672 2.656 6.4 1.696 1.696 3.968 2.656 6.4 2.656s4.672-0.928 6.4-2.656l5.12-5.12c3.52-3.52 3.52-9.248 0-12.8-0.736-0.672-1.888-0.672-2.592 0.032z"></path>
+                <path d="M29.344 2.656c-1.696-1.728-3.968-2.656-6.4-2.656s-4.672 0.928-6.4 2.656l-5.12 5.12c-3.52 3.52-3.52 9.248 0 12.8 0.352 0.352 0.8 0.544 1.28 0.544s0.928-0.192 1.28-0.544c0.704-0.704 0.704-1.856 0-2.56-2.112-2.112-2.112-5.568 0-7.68l5.12-5.12c2.048-2.048 5.632-2.048 7.68 0 1.024 1.024 1.6 2.4 1.6 3.84s-0.576 2.816-1.6 3.84c-0.704 0.704-0.704 1.856 0 2.56s1.856 0.704 2.56 0c1.696-1.696 2.656-3.968 2.656-6.4s-0.928-4.704-2.656-6.4z"></path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <script>
+        function copyCode() {
+            const codeElement = document.getElementById("key-display");
+            const copyButton = document.querySelector(".js-copy-btn");
+            navigator.clipboard.writeText(codeElement.textContent).then(() => {
+                copyButton.textContent = "Copied!";
+                setTimeout(() => {
+                    copyButton.textContent = "Copy Code";
+                }, 2000); // Reset button text after 2 seconds
+            }).catch(err => {
+                console.error("Failed to copy: ", err);
+                copyButton.textContent = "Error";
+            });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
